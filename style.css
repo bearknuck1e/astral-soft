@@ -612,6 +612,25 @@ footer .c-4 a{
   #gift .cont-table{
     margin-left: 0px;
   }
+  #step-2 table{
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+  #step-2 .tbl-1{
+    font-size: 12px;
+    line-height: 24.59px;
+    padding: 54px 5px;
+  }
+  #step-2 .tbl-2{
+    font-size: 12px;
+    line-height: 25.6px;
+    padding: 27px 5px;
+  }
+  #step-2 .tbl-3{
+    font-size: 12px;
+    line-height: 25.6px;
+    padding: 14px 5px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -624,6 +643,36 @@ footer .c-4 a{
   #gift .cont-table{
     margin-right: 0px;
   }
+
+  /* #step-2 table{
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+  #step-2 .tbl-1{
+    font-size: 12px;
+    line-height: 24.59px;
+    padding: 54px 5px;
+  }
+  #step-2 .tbl-2{
+    font-size: 12px;
+    line-height: 25.6px;
+    padding: 27px 5px;
+  }
+  #step-2 .tbl-3{
+    font-size: 12px;
+    line-height: 25.6px;
+    padding: 14px 5px;
+  } */
+  /* #step-2 .tbl-4{
+    background-color: #934EC7;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    padding: 21px 0px;
+    border-radius: 40px;
+    text-align: center;
+  } */
 }
 
 @media (max-width: 720px) {
