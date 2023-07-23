@@ -115,6 +115,7 @@ const form_1=document.getElementById('send-1');
 form_1.onclick=function(event){
   event.preventDefault();
   
+  // const formModal=document.getElementById('formModal');
   const inn_org_1=document.getElementById('inn-org-1');
   const name_1=document.getElementById('name-1');
   const mail_1=document.getElementById('mail-1');
@@ -154,5 +155,6 @@ form_1.onclick=function(event){
     name_1.value='';
     mail_1.value='';
     phone_1.value='';
+    // formModal.style.display='none';
   }
 }

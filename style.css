@@ -100,8 +100,8 @@ header .mail{
   max-width: 1920px;
   padding-top: 80px;
   padding-bottom: 144px;
-  padding-left: 454px;
-  padding-right: 410px;
+  /* padding-left: 454px;
+  padding-right: 410px; */
 }
 #step-1 .image{
   position: absolute;
@@ -139,7 +139,7 @@ header .mail{
 #step-1 button{
   background: #662D91;
   color: #FFFFFF;
-  width: 253px;
+  max-width: 253px;
   border: none;
   border-radius: 40px;
   font-size: 18px;
@@ -193,12 +193,10 @@ header .mail{
 #step-2 table{
   border-collapse: separate;
   border-spacing: 20px;
-  /* align-items: center; */
 }
 #step-2 .tbl-1{
   background-color: #FFFFFF;
-  /* width: 30%; */
-  max-width: 288px;
+  width: 30%;
   color: #490B78;
   font-size: 18px;
   font-weight: 700;
@@ -208,8 +206,7 @@ header .mail{
 }
 #step-2 .tbl-2{
   background-color: #FFFFFF;
-  /* width: 30%; */
-  max-width: 290px;
+  width: 30%;
   color: #444444;
   font-size: 16px;
   font-weight: 400;
@@ -219,8 +216,7 @@ header .mail{
 }
 #step-2 .tbl-3{
   background-color: #FFFFFF;
-  /* width: 60%; */
-  max-width: 394px;
+  width: 60%;
   color: #444444;
   font-size: 16px;
   font-weight: 400;
@@ -481,6 +477,8 @@ footer .c-4 a{
   }
   #step-1{
     background-position: top 188px right 395px;
+    /* padding-left: 454px;
+    padding-right: 410px; */
   }
   #step-1 .image{
     right: 410px;
@@ -533,8 +531,8 @@ footer .c-4 a{
     padding-left: 50px;
   }
   #step-2{
-    padding-left: 54px;
-    padding-right: 54px;
+    padding-left: 104px;
+    padding-right: 104px;
   }
   #step-2 .content-2-1{
     margin-left: 390px;
@@ -544,7 +542,7 @@ footer .c-4 a{
     padding-right: 104px;
   }
   #gift .cont-table{
-    margin-right: 200px;  
+    margin-right: 200px;
   }
   #gift .content-2{
     margin-left: 5px;
@@ -555,9 +553,6 @@ footer .c-4 a{
   footer{
     padding-left: 104px;
     padding-right: 104px;
-  }
-  .container{
-    width: 100%;
   }  
 }
 
@@ -565,117 +560,24 @@ footer .c-4 a{
   #main-content .content-3{
     margin-right: 100px;
   }
-  /* #step-1{
+  #step-1{
     padding-left: 20px;
   }
   #step-2{
     padding-left: 24px;
     padding-right: 24px;
-  } */
+  }
   #form-client{
     margin-left: 0px;
   }
-  /* #gift{
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  footer{
-    padding-left: 24px;
-    padding-right: 24px;
-  } */
-
-
-  #main-content{
-    width: 100%;
-    /* margin-right: 100px; */
-  }
-  #step-1{
-    width: 100%;
-    /* padding-left: 20px; */
-  }
-  #step-2{
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  #step-3{
-    width: 100%;
-    /* margin-left: 0px; */
-  }
   #gift{
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   footer{
-    width: 100%;
-    /* padding-left: 24px;
-    padding-right: 24px; */
+    padding-left: 24px;
+    padding-right: 24px;
   }
-  #gift .cont-table{
-    margin-left: 0px;
-  }
-  #step-2 table{
-    border-collapse: separate;
-    border-spacing: 20px;
-  }
-  #step-2 .tbl-1{
-    font-size: 12px;
-    line-height: 24.59px;
-    padding: 54px 5px;
-  }
-  #step-2 .tbl-2{
-    font-size: 12px;
-    line-height: 25.6px;
-    padding: 27px 5px;
-  }
-  #step-2 .tbl-3{
-    font-size: 12px;
-    line-height: 25.6px;
-    padding: 14px 5px;
-  }
-}
-
-@media (max-width: 800px) {
-  #main-content .content-2{
-    background-image: none;
-  }
-  #img-girl-5{
-    display: none;
-  }
-  #gift .cont-table{
-    margin-right: 0px;
-  }
-
-  /* #step-2 table{
-    border-collapse: separate;
-    border-spacing: 20px;
-  }
-  #step-2 .tbl-1{
-    font-size: 12px;
-    line-height: 24.59px;
-    padding: 54px 5px;
-  }
-  #step-2 .tbl-2{
-    font-size: 12px;
-    line-height: 25.6px;
-    padding: 27px 5px;
-  }
-  #step-2 .tbl-3{
-    font-size: 12px;
-    line-height: 25.6px;
-    padding: 14px 5px;
-  } */
-  /* #step-2 .tbl-4{
-    background-color: #934EC7;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25.6px;
-    padding: 21px 0px;
-    border-radius: 40px;
-    text-align: center;
-  } */
 }
 
 @media (max-width: 720px) {
@@ -700,23 +602,86 @@ footer .c-4 a{
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 540px) {
   #main-content .content-1{
-    max-width: 1220px;
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 800;
-    line-height: 69.6px;
-    padding-bottom: 175px;
+    line-height: 45px;
+    /* padding-bottom: 25px; */
   }
-  #gift .content-1{
-    width: 100%;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 47px;
-    margin-bottom: 53px;
+  /* #step-1 .content-2{
+    font-size: 26px;
+    line-height: 32px;
+  } */
+  #step-1 .content-2{
+    /* background-image: url(svg/Group\ 137153.svg); */
+    /* background-position: none; */
+    /* background-repeat: no-repeat;
+    max-width: 530px; */
+    /* background-image: none; */
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 42px;
+    margin-right: 0px;
+  }
+  /* #step-2{
+    padding-left: 0px;
+    padding-right: 0px;
+  } */
+  #step-2 table{
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+  #step-2 .tbl-1{
+    background-color: #FFFFFF;
+    width: 30%;
+    color: #490B78;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 54px 10px;
+    border-radius: 40px;
+  }
+  #step-2 .tbl-2{
+    background-color: #FFFFFF;
+    width: 30%;
+    color: #444444;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 27px 10px;
+    border-radius: 40px;
+  }
+  #step-2 .tbl-3{
+    background-color: #FFFFFF;
+    width: 60%;
+    color: #444444;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 14px 10px;
+    border-radius: 40px;
+  }
+  #step-2 .tbl-4{
+    background-color: #934EC7;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    padding: 21px 0px;
+    border-radius: 40px;
     text-align: center;
   }
-  /* #img-girl{
-    display: none;  
-  } */
+
+  #gift .content-1{
+    /* width: 100%; */
+    font-size: 24px;
+    line-height: 32px;
+    /* margin-bottom: 53px;
+    text-align: center; */
+  }
+
+  .image{
+    display: none;
+  }
 }
