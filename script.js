@@ -16,24 +16,33 @@ union2.style.left=(rect_td2.left-rect_td0.left+Math.round(rect_td2.width/2)-77)+
 union3.style.top=(rect_td3.bottom-rect_td0.top+56)+"px";
 union3.style.left=(rect_td3.right-rect_td0.left-124)+"px";
 
+let pageWidth = document.documentElement.scrollWidth;
+
 const formClient=document.getElementById("form-client");
 let rect_formClient=formClient.getBoundingClientRect();
 const imgGirl=document.getElementById("img-girl");
-imgGirl.style.top=(rect_formClient.bottom-rect_formClient.top-390)+"px";
-imgGirl.style.left=(rect_formClient.right-rect_formClient.left-215)+"px";
+if (pageWidth>540){
+  imgGirl.style.top=(rect_formClient.bottom-rect_formClient.top-390)+"px";
+  imgGirl.style.left=(rect_formClient.right-rect_formClient.left-215)+"px";
+}else{
+  imgGirl.style.top=(-380)+"px";
+  imgGirl.style.left= (-10)+"px";
+}
 
 const contTable=document.getElementById("cont-table");
 let rect_contTable=contTable.getBoundingClientRect();
 const imgGirl5=document.getElementById("img-girl-5");
 imgGirl5.style.top=(rect_contTable.bottom-rect_contTable.top-306)+"px";
 imgGirl5.style.left=(rect_contTable.right-rect_contTable.left-220)+"px";
-let pageWidth = document.documentElement.scrollWidth;
 if (pageWidth>1210){
   imgGirl5.style.top=(rect_contTable.bottom-rect_contTable.top-306)+"px";
   imgGirl5.style.left=(rect_contTable.right-rect_contTable.left-220)+"px";
-}else{
+}else if (pageWidth>720){
   imgGirl5.style.top=(rect_contTable.bottom-rect_contTable.top-306)+"px";
   imgGirl5.style.left=(rect_contTable.right-rect_contTable.left-140)+"px";
+}else{
+  imgGirl5.style.top=(-320)+"px";
+  imgGirl5.style.left=(-20)+"px";
 }
 
 window.addEventListener("resize", ()=> {
@@ -48,18 +57,27 @@ window.addEventListener("resize", ()=> {
   union3.style.top=(rect_td3.bottom-rect_td0.top+56)+"px";
   union3.style.left=(rect_td3.right-rect_td0.left-124)+"px";  
 
+  pageWidth=document.documentElement.scrollWidth;
+  
   rect_formClient=formClient.getBoundingClientRect();
-  imgGirl.style.top=(rect_formClient.bottom-rect_formClient.top-390)+"px";
-  imgGirl.style.left=(rect_formClient.right-rect_formClient.left-215)+"px";
+  if (pageWidth>540){
+    imgGirl.style.top=(rect_formClient.bottom-rect_formClient.top-390)+"px";
+    imgGirl.style.left=(rect_formClient.right-rect_formClient.left-215)+"px";
+  }else{
+    imgGirl.style.top=(-380)+"px";
+    imgGirl.style.left= (-10)+"px";
+  }
 
   rect_contTable=contTable.getBoundingClientRect();  
-  pageWidth=document.documentElement.scrollWidth;
   if (pageWidth>1210){
     imgGirl5.style.top=(rect_contTable.bottom-rect_contTable.top-306)+"px";
     imgGirl5.style.left=(rect_contTable.right-rect_contTable.left-220)+"px";
-  }else{
+  }else if (pageWidth>720){
     imgGirl5.style.top=(rect_contTable.bottom-rect_contTable.top-306)+"px";
     imgGirl5.style.left=(rect_contTable.right-rect_contTable.left-140)+"px";
+  }else{
+    imgGirl5.style.top=(-320)+"px";
+    imgGirl5.style.left=(-20)+"px";
   }
 });
 
